@@ -74,8 +74,8 @@ if __name__ == '__main__':
     target_vis_file = trial_name + '.txt'
     nagents = 1
     targets = [[],[],[],[],[]]
-    initial = [1622,533,342,986]
-    moveobstacles = [1992]
+    initial = [178,533,342,986]
+    moveobstacles = [106]
     gwg = Gridworld(filename,nagents=nagents, targets=targets, initial=initial, moveobstacles=moveobstacles)
     gwg.colorstates = [set(), set()]
     gwg.render()
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     target_vis_dist = 2
     vel = [3,2,2,2]
     invisibilityset = []
-    sensor_uncertainty = 3
+    sensor_uncertainty = 1
     filename = []
      ######################### Create sensor uncertainty dictionary #############################
     belief_ncols = gwg.ncols - sensor_uncertainty + 1
@@ -151,7 +151,7 @@ if __name__ == '__main__':
             write_structured_slugs.write_to_slugs_imperfect_sensor(infile, gwg, initial[n], moveobstacles[0], iset,
                                                                    targets[n], vel[n], visdist[n], allowed_states[n],
                                                                    [],
-                                                                   pg[n], belief_safety=20, belief_liveness=0,
+                                                                   pg[n], belief_safety=1000, belief_liveness=0,
                                                                    target_reachability=False,
                                                                    sensor_uncertainty=sensor_uncertainty,
                                                                    sensor_uncertain_dict=sensor_uncertain_dict)

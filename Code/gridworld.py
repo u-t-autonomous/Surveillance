@@ -394,7 +394,7 @@ class Gridworld():
             statecols = [(0,0,0),(150,150,150)]
             for i in range(len(self.colorstates)):
                 for s in self.colorstates[i]:
-                    if s not in self.edges and not any(s in x for x in self.targets) and s not in self.obstacles:
+                    if not any(s in x for x in self.targets) and s not in self.obstacles:
                         (x, y) = self.indx2coord(s)
                         coords = pygame.Rect(y, x, self.size, self.size)
                         pygame.draw.rect(self.bg, statecols[i], coords)  # the obstacles are in color grey
