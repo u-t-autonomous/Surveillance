@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     mapname = 'RVR_2_7_20_site_cropped'
     # mapname = 'chicago4_45_2454_5673_map'
-    scale = (74,29)
+    scale = (18,11)
     filename = [folder_locn + example_name + '/Environment/' + mapname + '.png',scale,cv2.INTER_LINEAR_EXACT]
 
     image = cv2.imread(filename[0], cv2.IMREAD_GRAYSCALE)  # 0 if obstacle, 255 if free space
