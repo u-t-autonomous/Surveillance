@@ -180,7 +180,7 @@ if __name__ == '__main__':
     # Control_Parser.parseJson(outfile, outfilename='Example2_perm_readable')
     # Control_Parser.parsePermissiveStrategy(outfile, outfilename='Example1_Perm_readable.json')
     Simulator.userControlled_imperfect_sensor(filename, gwg, pg, moveobstacles, allowed_states, invisibilityset,
-                                              sensor_uncertain_dict, sensor_uncertainty)
+                                              sensor_uncertain_dict, sensor_uncertainty,'Examples/Sandia/Outputs/Trace/')
 
     # isetlist = dict()
     # for s1 in iset.keys():

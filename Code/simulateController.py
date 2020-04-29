@@ -212,7 +212,7 @@ def userControlled_imperfect_sensor(filename,gwg,partitionGrid,moveobstacles,all
 
         gwg.render()
         # gwg.draw_state_labels()
-        gwg.save('Examples/figs/sandia_example_t'+str(tt)+'.png')
+        # gwg.save('Examples/figs/sandia_example_t'+str(tt)+'.png')
         tt+=1
 
         if saveImage!=None:
